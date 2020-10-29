@@ -4,11 +4,17 @@ import Spinner from '../components/spinner';
 
 export const regular: React.FC = () => (
   <div style={{ position: 'relative' }}>
-    <Spinner size={number('Size', 32)} color={text('color', '')} />
+    <Spinner size={number('Size', 32)} color={text('Color (First)', '')} />
     <br />
-    <Spinner size={number('Size', 32)} color={text('color2', '#00cc00')} />
+    <Spinner
+      size={number('Size', 32)}
+      color={text('Color (Second)', '#00cc00')}
+    />
     <br />
-    <Spinner size={number('Size', 32)} color={text('color3', 'tomato')} />
+    <Spinner
+      size={number('Size', 32)}
+      color={text('Color (Third)', 'tomato')}
+    />
   </div>
 );
 

@@ -12,6 +12,8 @@ interface Props {
   imageSrc?: string;
   text?: string;
   iconKey?: string;
+  isIconBrand?: boolean;
+  isIconSolid?: boolean;
   isSmallIcon?: boolean;
 }
 
@@ -107,6 +109,8 @@ const Avatar: FC<Props> = (props) => {
     imageSrc,
     iconKey,
     text,
+    isIconBrand,
+    isIconSolid,
     isSmallIcon,
     ...otherProps
   } = props;
@@ -178,7 +182,14 @@ const Avatar: FC<Props> = (props) => {
     <div {...otherProps} className={rootClass} style={styleOverrides}>
       {imageTag}
       {!!initials && <span className={styles.text}>{initials}</span>}
-      {!!iconKey && <Icon name={iconKey} className={styles.icon} />}
+      {!!iconKey && (
+        <Icon
+          name={iconKey}
+          isSolid={isIconSolid}
+          isBrand={isIconBrand}
+          className={styles.icon}
+        />
+      )}
       {printIcon}
     </div>
   );

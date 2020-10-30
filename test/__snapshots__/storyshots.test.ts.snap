@@ -106,7 +106,7 @@ exports[`Storyshots Avatar With Icon 1`] = `
       }
     >
       <i
-        className="fa fa-salesforce"
+        className="fab fa-salesforce"
       />
     </div>
   </div>
@@ -127,7 +127,7 @@ exports[`Storyshots Avatar With Icon 1`] = `
       }
     >
       <i
-        className="fa fa-magento"
+        className="fab fa-magento"
       />
     </div>
   </div>
@@ -190,7 +190,7 @@ exports[`Storyshots Avatar With Icon 1`] = `
       }
     >
       <i
-        className="fa fa-salesforce"
+        className="fab fa-salesforce"
       />
     </div>
   </div>
@@ -211,7 +211,7 @@ exports[`Storyshots Avatar With Icon 1`] = `
       }
     >
       <i
-        className="fa fa-magento"
+        className="fab fa-magento"
       />
     </div>
   </div>
@@ -260,10 +260,33 @@ exports[`Storyshots Avatar With Image 1`] = `
 </div>
 `;
 
-exports[`Storyshots Avatar With Initials 1`] = `
+exports[`Storyshots Avatar With User 1`] = `
 <div>
   <small>
-    User one name John - should print "J".
+    User with avatar, name, email and phone number - should show avatar
+  </small>
+  <div
+    style={
+      Object {
+        "width": "45px",
+      }
+    }
+  >
+    <div
+      className=""
+      style={Object {}}
+    >
+      <img
+        alt="John Doe"
+        className=""
+        onError={[Function]}
+        onLoad={[Function]}
+      />
+    </div>
+  </div>
+  <br />
+  <small>
+    User with name, email and phone number - should print "JD".
   </small>
   <div
     style={
@@ -281,61 +304,13 @@ exports[`Storyshots Avatar With Initials 1`] = `
       }
     >
       <span>
-        J
+        JD
       </span>
     </div>
   </div>
   <br />
   <small>
-    User with only phone number (+4560860931) - should print "31".
-  </small>
-  <div
-    style={
-      Object {
-        "width": "45px",
-      }
-    }
-  >
-    <div
-      className=""
-      style={
-        Object {
-          "background": "linear-gradient(315deg, rgb(55,105,230) 0%, rgb(179,164,244) 100%)",
-        }
-      }
-    >
-      <span>
-        31
-      </span>
-    </div>
-  </div>
-  <br />
-  <small>
-    User with name (John Something), email and phone number - should print "JS".
-  </small>
-  <div
-    style={
-      Object {
-        "width": "45px",
-      }
-    }
-  >
-    <div
-      className=""
-      style={
-        Object {
-          "background": "linear-gradient(315deg, rgb(55,105,230) 0%, rgb(179,164,244) 100%)",
-        }
-      }
-    >
-      <span>
-        JS
-      </span>
-    </div>
-  </div>
-  <br />
-  <small>
-    No name - only email (john@gmail.com) and phone number - should print "JG".
+    User with email and phone number - should print "JG".
   </small>
   <div
     style={
@@ -359,7 +334,7 @@ exports[`Storyshots Avatar With Initials 1`] = `
   </div>
   <br />
   <small>
-    No email - only name (John Something) and phone number - should print "JS".
+    User with only phone number - should print "31".
   </small>
   <div
     style={
@@ -377,7 +352,7 @@ exports[`Storyshots Avatar With Initials 1`] = `
       }
     >
       <span>
-        JS
+        31
       </span>
     </div>
   </div>
@@ -427,51 +402,6 @@ exports[`Storyshots Avatar With Initials 1`] = `
       <i
         className="fa fa-user-slash"
       />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Avatar With User 1`] = `
-<div>
-  <div
-    style={
-      Object {
-        "width": "45px",
-      }
-    }
-  >
-    <div
-      className=""
-      style={Object {}}
-    >
-      <img
-        alt="John Doe"
-        className=""
-        onError={[Function]}
-        onLoad={[Function]}
-      />
-    </div>
-  </div>
-  <br />
-  <div
-    style={
-      Object {
-        "width": "45px",
-      }
-    }
-  >
-    <div
-      className=""
-      style={
-        Object {
-          "background": "linear-gradient(315deg, rgb(55,105,230) 0%, rgb(179,164,244) 100%)",
-        }
-      }
-    >
-      <span>
-        JD
-      </span>
     </div>
   </div>
 </div>
@@ -531,129 +461,45 @@ exports[`Storyshots Chart Regular 1`] = `
       />
     </svg>
   </div>
+</div>
+`;
+
+exports[`Storyshots Score Regular 1`] = `
+<div>
   <div
     className=""
+    style={
+      Object {
+        "--circle-circumference": 194.77874452256717,
+        "--circle-percentage": 165.56193284418208,
+      }
+    }
   >
-    <span>
-      1
-    </span>
     <svg
+      fill="none"
       height={72}
       width={72}
     >
       <circle
         cx={36}
         cy={36}
-        fill="none"
-        r={30}
-        stroke="#FF9430"
-        strokeDasharray="3.7699111843077513 184.72564803107983"
-        strokeDashoffset={47.12388980384689}
-        strokeWidth={12}
+        r={31}
+        strokeWidth={10}
       />
       <circle
         cx={36}
         cy={36}
-        fill="none"
-        r={30}
-        stroke="#46DB75"
-        strokeDasharray="3.7699111843077513 184.72564803107983"
-        strokeDashoffset={43.35397861953914}
-        strokeWidth={12}
-      />
-      <circle
-        cx={36}
-        cy={36}
-        fill="none"
-        r={30}
-        stroke="#00A9FF"
-        strokeDasharray="105.55751316061705 82.93804605477052"
-        strokeDashoffset={39.58406743523139}
-        strokeWidth={12}
-      />
-      <circle
-        cx={36}
-        cy={36}
-        fill="none"
-        r={30}
-        stroke="#D53341"
-        strokeDasharray="75.39822368615503 113.09733552923254"
-        strokeDashoffset={-65.97344572538566}
-        strokeWidth={12}
+        r={31}
+        stroke="#0cce6b"
+        strokeWidth={10}
+        transform="rotate(-90 36 36)"
       />
     </svg>
-  </div>
-  <div
-    className=""
-  >
-    <span>
-      345
-    </span>
-    <svg
-      height={72}
-      width={72}
+    <span
+      aria-label="score"
     >
-      <circle
-        cx={36}
-        cy={36}
-        fill="none"
-        r={30}
-        stroke="#FF9430"
-        strokeDasharray="94.24777960769379 94.24777960769379"
-        strokeDashoffset={47.12388980384689}
-        strokeWidth={12}
-      />
-      <circle
-        cx={36}
-        cy={36}
-        fill="none"
-        r={30}
-        stroke="#46DB75"
-        strokeDasharray="18.84955592153876 169.64600329384882"
-        strokeDashoffset={-47.12388980384689}
-        strokeWidth={12}
-      />
-      <circle
-        cx={36}
-        cy={36}
-        fill="none"
-        r={30}
-        stroke="#00A9FF"
-        strokeDasharray="56.548667764616276 131.9468914507713"
-        strokeDashoffset={-65.97344572538566}
-        strokeWidth={12}
-      />
-      <circle
-        cx={36}
-        cy={36}
-        fill="none"
-        r={30}
-        stroke="#D53341"
-        strokeDasharray="18.84955592153876 169.64600329384882"
-        strokeDashoffset={-122.52211349000191}
-        strokeWidth={12}
-      />
-    </svg>
-  </div>
-  <div
-    className="undefined"
-  >
-    <span>
-      0
+      85
     </span>
-    <svg
-      height={72}
-      width={72}
-    >
-      <circle
-        cx={36}
-        cy={36}
-        fill="none"
-        r={30}
-        stroke="#dcdcdc"
-        strokeWidth={12}
-      />
-    </svg>
   </div>
 </div>
 `;

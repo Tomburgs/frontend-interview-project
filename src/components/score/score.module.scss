@@ -1,0 +1,38 @@
+@keyframes circle-load {
+  from {
+    stroke-dasharray: 0 var(--circle-circumference);
+  }
+  to {
+    stroke-dasharray: var(--circle-percentage) var(--circle-circumference);
+  }
+}
+
+.root {
+  --circle-percentage: 0;
+  --circle-circumference: 0;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    position: absolute;
+    font-weight: 600;
+  }
+
+  circle {
+    stroke-linecap: round;
+
+    &:first-child {
+      stroke: rgba(0, 0, 0, .1);
+    }
+
+    &:last-child {
+      animation: circle-load 500ms ease forwards;
+    }
+  }
+
+  &IsEmpty circle:last-child {
+    display: none;
+  }
+}

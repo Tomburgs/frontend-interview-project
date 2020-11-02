@@ -1,7 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Autocomplete Regular 1`] = `
+<div
+  style={
+    Object {
+      "width": "200px",
+    }
+  }
+>
+  <div
+    className="undefined"
+  >
+    <div>
+      <input
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        placeholder="Oh, fruity fruit."
+        type="text"
+        value="Blueberries"
+      />
+      <ul>
+        <li
+          aria-selected={true}
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="option"
+        >
+          Blueberries
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Avatar With Gradient Seed 1`] = `
-<div>
+<div
+  selected="B1"
+  setSelected={[Function]}
+>
   <div
     style={
       Object {
@@ -47,7 +85,10 @@ exports[`Storyshots Avatar With Gradient Seed 1`] = `
 `;
 
 exports[`Storyshots Avatar With Icon 1`] = `
-<div>
+<div
+  selected="B1"
+  setSelected={[Function]}
+>
   <div
     style={
       Object {
@@ -219,7 +260,10 @@ exports[`Storyshots Avatar With Icon 1`] = `
 `;
 
 exports[`Storyshots Avatar With Image 1`] = `
-<div>
+<div
+  selected="B1"
+  setSelected={[Function]}
+>
   <div
     style={
       Object {
@@ -261,7 +305,10 @@ exports[`Storyshots Avatar With Image 1`] = `
 `;
 
 exports[`Storyshots Avatar With User 1`] = `
-<div>
+<div
+  selected="B1"
+  setSelected={[Function]}
+>
   <small>
     User with avatar, name, email and phone number - should show avatar
   </small>
@@ -408,7 +455,10 @@ exports[`Storyshots Avatar With User 1`] = `
 `;
 
 exports[`Storyshots Chart Regular 1`] = `
-<div>
+<div
+  selected="B1"
+  setSelected={[Function]}
+>
   <div
     className=""
   >
@@ -465,7 +515,10 @@ exports[`Storyshots Chart Regular 1`] = `
 `;
 
 exports[`Storyshots Score Regular 1`] = `
-<div>
+<div
+  selected="B1"
+  setSelected={[Function]}
+>
   <div
     className=""
     style={
@@ -506,6 +559,8 @@ exports[`Storyshots Score Regular 1`] = `
 
 exports[`Storyshots Spinner Regular 1`] = `
 <div
+  selected="B1"
+  setSelected={[Function]}
   style={
     Object {
       "position": "relative",
